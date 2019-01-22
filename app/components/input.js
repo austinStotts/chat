@@ -13,11 +13,13 @@ class Input extends PureComponent {
   }
 
   handleKey (key) {
+    if(this.state.text === '') return;
     if(key === 'Enter') {
       this.props.addMessage(
         {type:'text', data:this.state.text, username: this.props.username}
       )
       this.refs.input.value = '';
+      this.setState({text: ''})
     }
   }
 

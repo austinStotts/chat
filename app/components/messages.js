@@ -6,7 +6,7 @@ const  Messages = forwardRef((props, ref) => {
       {props.messages.map((value) => {
         if(value.type === 'image') {
           return (
-            <div>
+            <div key={Math.random()}>
               <p className="pic-username">{`@${value.username}:`}</p>
               <img src={value.data} alt="error loading image"></img>
             </div>
@@ -15,7 +15,7 @@ const  Messages = forwardRef((props, ref) => {
 
         else if (value.type === 'text') {
           return (
-            <div className="message-wrapper">
+            <div key={Math.random()} className="message-wrapper">
               <p className="username">{`@${value.username}:`}</p>
               <p className="message">{value.data}</p>
             </div>
