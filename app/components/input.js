@@ -34,14 +34,17 @@ class Input extends PureComponent {
           type="text"
         >
         </input>
-        <button className="text-button" onClick={() => this.handleKey('Enter')}>{'send'}</button>
+        <div className="btn-text-wrapper">
+          <button className="text-button" onClick={() => this.handleKey('Enter')}>{'send'}</button>
+        </div>
         <style jsx>{`
           .input-wrapper {
             display: inline-block;
             border: 1px solid black;
-            width: 95%;
+            width: 92%;
             border-radius: 5px;
-            padding: 3px 0px 3px 4px;
+            margin-left: 2%;
+            margin-right: 3%;
           }
           .text-input {
             display: inline-block;
@@ -50,21 +53,34 @@ class Input extends PureComponent {
             width: 90%;
             border: none;
             outline: none;
-            margin-left: auto;
             font-family: 'Roboto', sans-serif;
+            padding: 3px 0px 3px 5px;
+            margin-left: 4px;
           }
           .text-button {
-            right:0px;
-            width: 9%;
+            width: 100%;
             border: none;
             height: 100%;
             display: inline-block;
             font-size: 1rem;
             outline: none;
-            border-left: 2px solid black;
             cursor: pointer;
             min-width: 50px;
-            margin-right: auto;
+            padding: 3px 0px 4px 0px;
+            border-radius: 0px 4px 4px 0px;
+            border-left: 1px solid black;
+            transition-duration: 0.5s;
+          }
+          .btn-text-wrapper {
+            margin: 0%;
+            padding: 0%;
+            display: inline-block;
+            float: right;
+            width: 9%;
+          }
+          .text-button:hover {
+            background-color: #0074D9;
+            color: white;
           }
         `}</style>
       </div>

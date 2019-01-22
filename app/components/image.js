@@ -42,7 +42,6 @@ class Image extends PureComponent {
             outline: none;
           }
           .image-wrapper {
-            margin: 0%;
             padding: 0%;
             outline: none;
             display: inline-block;

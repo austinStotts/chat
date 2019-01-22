@@ -43,12 +43,26 @@ class Room extends PureComponent {
           .room-wrapper {
             display: inline-block;
             margin-right: 10px;
+            margin-left: 2%;
           }
           .room-input {
             border: 1px solid black;
             border-radius: 3px;
             padding: 3px 4px 3px 4px;
             outline: none;
+          }
+          .join-btn {
+            border: 1px solid black;
+            outline: none;
+            border-radius: 3px;
+            padding: 3px 4px 3px 4px;
+            margin-left: 3px;
+            cursor: pointer;
+            transition-duration: 0.5s;
+          }
+          .join-btn:hover {
+            background-color: #0074D9;
+            color: white;
           }
         `}</style>
       </div>

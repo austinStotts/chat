@@ -40,7 +40,6 @@ class App extends React.Component {
             width: 100%;
             position: fixed;
             bottom:20px;
-            margin-left: 1%;
           }
           .main-wrapper {
             height: 100%;
